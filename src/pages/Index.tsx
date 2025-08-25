@@ -163,6 +163,302 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Cars Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <h3 className="text-4xl font-bold text-center text-foreground mb-12">На чем едем</h3>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h4 className="text-3xl font-bold text-foreground mb-6">Премиальный автопарк</h4>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Наш флот состоит исключительно из автомобилей премиум-класса. 
+                Mercedes G-Class, BMW X7, Range Rover Sport — каждая машина 
+                проходит тщательную подготовку и техническое обслуживание перед поездкой.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center space-x-3">
+                  <Icon name="CheckCircle" size={20} className="text-primary" />
+                  <span className="text-foreground">Полная страховка и техподдержка</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="CheckCircle" size={20} className="text-primary" />
+                  <span className="text-foreground">Максимальный комфорт и безопасность</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="CheckCircle" size={20} className="text-primary" />
+                  <span className="text-foreground">Профессиональная подготовка к маршруту</span>
+                </div>
+              </div>
+              
+              <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3">
+                Подробнее о "Танке"
+              </Button>
+            </div>
+            
+            <div className="order-1 lg:order-2">
+              <Card className="overflow-hidden border-0 shadow-2xl">
+                <img 
+                  src="/img/4f655e3a-0f0c-454f-a653-222aeb9f838e.jpg" 
+                  alt="Премиальные автомобили"
+                  className="w-full h-80 object-cover"
+                />
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* All Inclusive */}
+      <section className="py-16 bg-secondary/20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h3 className="text-4xl font-bold text-foreground mb-6">Все включено</h3>
+            <p className="text-lg text-muted-foreground">
+              VIP-сервис полного цикла — от планирования до возвращения домой
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="p-6 text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Icon name="Hotel" size={48} className="text-primary mx-auto mb-4" />
+              <h4 className="text-xl font-bold text-foreground mb-3">Размещение</h4>
+              <p className="text-muted-foreground text-sm">
+                Бронирование отелей класса люкс, эксклюзивные номера с лучшими видами
+              </p>
+            </Card>
+            
+            <Card className="p-6 text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Icon name="Utensils" size={48} className="text-primary mx-auto mb-4" />
+              <h4 className="text-xl font-bold text-foreground mb-3">Питание</h4>
+              <p className="text-muted-foreground text-sm">
+                Индивидуальное меню, закупка эксклюзивных продуктов и напитков по запросу
+              </p>
+            </Card>
+            
+            <Card className="p-6 text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Icon name="Wifi" size={48} className="text-primary mx-auto mb-4" />
+              <h4 className="text-xl font-bold text-foreground mb-3">Связь</h4>
+              <p className="text-muted-foreground text-sm">
+                Безлимитный интернет, спутниковая связь в удаленных районах
+              </p>
+            </Card>
+            
+            <Card className="p-6 text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Icon name="Gift" size={48} className="text-primary mx-auto mb-4" />
+              <h4 className="text-xl font-bold text-foreground mb-3">Мерч</h4>
+              <p className="text-muted-foreground text-sm">
+                Эксклюзивные сувениры, брендированная экипировка, памятные подарки
+              </p>
+            </Card>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <Card className="max-w-3xl mx-auto p-8 bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20">
+              <Icon name="MessageSquare" size={32} className="text-primary mx-auto mb-4" />
+              <h4 className="text-xl font-bold text-foreground mb-3">Индивидуальные пожелания</h4>
+              <p className="text-muted-foreground">
+                При отправке заявки вы можете указать любые индивидуальные пожелания 
+                в поле "Дополнительно". Мы учтем каждую деталь для вашего комфорта.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Safety Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Card className="overflow-hidden border-0 shadow-2xl">
+                <img 
+                  src="/img/b433a7d4-6bd3-4987-a4ea-b1908b80fe2e.jpg" 
+                  alt="Безопасность в путешествиях"
+                  className="w-full h-80 object-cover"
+                />
+              </Card>
+            </div>
+            
+            <div>
+              <h3 className="text-4xl font-bold text-foreground mb-6">Безопасность</h3>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Безопасность наших клиентов — наш абсолютный приоритет. 
+                Каждое путешествие планируется с учетом всех возможных рисков 
+                и обеспечивается профессиональной поддержкой.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <Icon name="Shield" size={24} className="text-primary mt-1" />
+                  <div>
+                    <h4 className="font-bold text-foreground mb-2">Круглосуточная поддержка</h4>
+                    <p className="text-muted-foreground">Оперативный центр контроля маршрута и экстренного реагирования</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <Icon name="Satellite" size={24} className="text-primary mt-1" />
+                  <div>
+                    <h4 className="font-bold text-foreground mb-2">GPS-мониторинг</h4>
+                    <p className="text-muted-foreground">Постоянное отслеживание местоположения и состояния группы</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <Icon name="Heart" size={24} className="text-primary mt-1" />
+                  <div>
+                    <h4 className="font-bold text-foreground mb-2">Медицинское сопровождение</h4>
+                    <p className="text-muted-foreground">Аптечка экстренной помощи и связь с медицинскими службами</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Carousel */}
+      <section className="py-16 bg-secondary/20">
+        <div className="container mx-auto px-6">
+          <h3 className="text-4xl font-bold text-center text-foreground mb-12">Отзывы участников</h3>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <Card className="p-6 border-0 shadow-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-foreground">Алексей М.</h5>
+                    <p className="text-sm text-muted-foreground">Кавказский тур</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic">
+                  "Невероятные впечатления! Организация на высшем уровне, 
+                  каждая деталь продумана. Обязательно поедем еще!"
+                </p>
+                <div className="flex mt-4">
+                  {[1,2,3,4,5].map((star) => (
+                    <Icon key={star} name="Star" size={16} className="text-primary fill-primary" />
+                  ))}
+                </div>
+              </Card>
+              
+              <Card className="p-6 border-0 shadow-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-foreground">Елена К.</h5>
+                    <p className="text-sm text-muted-foreground">Алтайская экспедиция</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic">
+                  "Профессиональная команда, комфортные автомобили, 
+                  потрясающие маршруты. Рекомендую всем!"
+                </p>
+                <div className="flex mt-4">
+                  {[1,2,3,4,5].map((star) => (
+                    <Icon key={star} name="Star" size={16} className="text-primary fill-primary" />
+                  ))}
+                </div>
+              </Card>
+              
+              <Card className="p-6 border-0 shadow-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                    <Icon name="User" size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-foreground">Дмитрий Р.</h5>
+                    <p className="text-sm text-muted-foreground">Корпоративный тур</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground italic">
+                  "Отличное решение для team-building. Коллектив сплотился, 
+                  все остались в восторге от поездки!"
+                </p>
+                <div className="flex mt-4">
+                  {[1,2,3,4,5].map((star) => (
+                    <Icon key={star} name="Star" size={16} className="text-primary fill-primary" />
+                  ))}
+                </div>
+              </Card>
+            </div>
+            
+            <div className="text-center">
+              <Button 
+                variant="outline" 
+                className="border-primary text-primary hover:bg-primary/5 px-8 py-3"
+                onClick={() => {
+                  const modal = document.getElementById('review-modal');
+                  if (modal) modal.classList.remove('hidden');
+                }}
+              >
+                Написать отзыв
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Review Modal */}
+      <div id="review-modal" className="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <Card className="w-full max-w-md">
+          <div className="p-6">
+            <div className="flex items-center justify-between mb-6">
+              <h4 className="text-xl font-bold text-foreground">Написать отзыв</h4>
+              <button 
+                onClick={() => {
+                  const modal = document.getElementById('review-modal');
+                  if (modal) modal.classList.add('hidden');
+                }}
+                className="text-muted-foreground hover:text-foreground"
+              >
+                <Icon name="X" size={24} />
+              </button>
+            </div>
+            
+            <form className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-foreground mb-2">Имя (ник)</label>
+                <input 
+                  type="text" 
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-foreground mb-2">Название тура</label>
+                <input 
+                  type="text" 
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary"
+                  placeholder="В каком туре участвовали?"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-foreground mb-2">Отзыв</label>
+                <textarea 
+                  rows={4}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary resize-none"
+                  placeholder="Поделитесь впечатлениями о поездке..."
+                ></textarea>
+              </div>
+              
+              <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white">
+                Отправить отзыв
+              </Button>
+            </form>
+          </div>
+        </Card>
+      </div>
+
       {/* Special Offers */}
       <section id="offers" className="py-16">
         <div className="container mx-auto px-6">
